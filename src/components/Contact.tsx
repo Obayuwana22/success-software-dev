@@ -1,69 +1,92 @@
-import React, { useState } from 'react'
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react'
+import React, { useState } from "react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Send,
+  Github,
+  Linkedin,
+  Twitter,
+} from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  })
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
-    })
-  }
+      [e.target.name]: e.target.value,
+    });
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
+    e.preventDefault();
     // Handle form submission here
-    console.log('Form submitted:', formData)
+    console.log("Form submitted:", formData);
     // Reset form
-    setFormData({ name: '', email: '', subject: '', message: '' })
-  }
+    setFormData({ name: "", email: "", subject: "", message: "" });
+  };
 
   const contactInfo = [
     {
       icon: Mail,
-      title: 'Email',
-      value: 'alex.nova@example.com',
-      href: 'mailto:alex.nova@example.com'
+      title: "Email",
+      value: "successobayuwana85@example.com",
+      href: "mailto:successobayuwana85@example.com",
     },
     {
       icon: Phone,
-      title: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      title: "Phone",
+      value: "+234 903 694 0150",
+      href: "tel:+2349036940150",
     },
     {
       icon: MapPin,
-      title: 'Location',
-      value: 'San Francisco, CA',
-      href: '#'
-    }
-  ]
+      title: "Location",
+      value: "Abuja, FCT",
+      href: "#",
+    },
+  ];
 
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Twitter, href: '#', label: 'Twitter' }
-  ]
+    {
+      icon: Github,
+      href: "https://github.com/Obayuwana22",
+      label: "GitHub",
+    },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/success-obayuwana-312748220?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      label: "LinkedIn",
+    },
+    {
+      icon: Twitter,
+      href: "https://x.com/its_success?t=nsp_wWIz7_DSXV9nDhrIMA&s=09",
+      label: "Twitter",
+    },
+  ];
 
   return (
     <section id="contact" className="py-20 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Get In{' '}
+            Get In{" "}
             <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
               Touch
             </span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-cyan-400 mx-auto rounded-full"></div>
           <p className="text-xl text-gray-300 mt-6 max-w-2xl mx-auto">
-            Ready to start your next project? Let's create something amazing together!
+            Ready to start your next project? Let's create something amazing
+            together!
           </p>
         </div>
 
@@ -71,16 +94,22 @@ const Contact = () => {
           {/* Contact Form */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-white mb-4">Send me a message</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Send me a message
+              </h3>
               <p className="text-gray-300">
-                I'm always interested in hearing about new opportunities and exciting projects.
+                I'm always interested in hearing about new opportunities and
+                exciting projects.
               </p>
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-gray-300 mb-2"
+                  >
                     Name
                   </label>
                   <input
@@ -95,7 +124,10 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-300 mb-2"
+                  >
                     Email
                   </label>
                   <input
@@ -112,7 +144,10 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
+                <label
+                  htmlFor="subject"
+                  className="block text-sm font-medium text-gray-300 mb-2"
+                >
                   Subject
                 </label>
                 <input
@@ -128,7 +163,10 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-gray-300 mb-2"
+                >
                   Message
                 </label>
                 <textarea
@@ -156,9 +194,12 @@ const Contact = () => {
           {/* Contact Info */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-white mb-4">Let's connect</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Let's connect
+              </h3>
               <p className="text-gray-300">
-                Feel free to reach out through any of these channels. I typically respond within 24 hours.
+                Feel free to reach out through any of these channels. I
+                typically respond within 24 hours.
               </p>
             </div>
 
@@ -168,13 +209,17 @@ const Contact = () => {
                 <a
                   key={title}
                   href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="group flex items-center space-x-4 p-6 bg-slate-800/30 backdrop-blur-sm rounded-2xl border border-blue-500/20 hover:border-blue-400/40 transition-all duration-300 hover:transform hover:scale-105"
                 >
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
                     <Icon className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-white">{title}</h4>
+                    <h4 className="text-lg font-semibold text-white">
+                      {title}
+                    </h4>
                     <p className="text-gray-300">{value}</p>
                   </div>
                 </a>
@@ -183,7 +228,9 @@ const Contact = () => {
 
             {/* Social Links */}
             <div>
-              <h4 className="text-lg font-semibold text-white mb-4">Follow me</h4>
+              <h4 className="text-lg font-semibold text-white mb-4">
+                Follow me
+              </h4>
               <div className="flex space-x-4">
                 {socialLinks.map(({ icon: Icon, href, label }) => (
                   <a
@@ -202,7 +249,9 @@ const Contact = () => {
             <div className="p-6 bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-400/30 rounded-2xl">
               <div className="flex items-center space-x-3">
                 <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-                <span className="text-green-300 font-semibold">Available for new projects</span>
+                <span className="text-green-300 font-semibold">
+                  Available for new projects
+                </span>
               </div>
               <p className="text-gray-300 mt-2 text-sm">
                 Currently accepting new freelance and full-time opportunities.
@@ -212,7 +261,7 @@ const Contact = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

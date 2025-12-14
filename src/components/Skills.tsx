@@ -1,4 +1,3 @@
-import React from 'react'
 import { Code, Palette, Settings } from 'lucide-react'
 
 const Skills = () => {
@@ -7,19 +6,19 @@ const Skills = () => {
       title: 'Frontend',
       icon: Code,
       color: 'from-blue-500 to-cyan-500',
-      skills: ['React', 'TypeScript', 'Next.js', 'JavaScript']
+      skills: ['Next.js', 'React', 'TypeScript', 'JavaScript']
     },
     {
       title: 'Styling',
       icon: Palette,
       color: 'from-purple-500 to-pink-500',
-      skills: ['Tailwind CSS', 'CSS3', 'Sass']
+      skills: ['Tailwind CSS', 'CSS3', 'Sass', 'shadcn/ui']
     },
     {
       title: 'Tools',
       icon: Settings,
       color: 'from-emerald-500 to-teal-500',
-      skills: ['Git', 'Vite', 'VS Code']
+      skills: ['Git/Github', 'VS Code', 'AI Tools']
     }
   ]
 

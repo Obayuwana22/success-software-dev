@@ -1,36 +1,36 @@
-import React from 'react'
-import { Code, Palette, Zap, Users } from 'lucide-react'
+import { Code, Palette, Zap, Users } from "lucide-react";
+import ME from "../images/aboutme.jpg";
 
 const About = () => {
   const highlights = [
     {
       icon: Code,
-      title: 'Clean Code',
-      description: 'Writing maintainable, scalable, and efficient code'
+      title: "Clean Code",
+      description: "Writing maintainable, scalable, and efficient code",
     },
     {
       icon: Palette,
-      title: 'UI/UX Focus',
-      description: 'Creating beautiful and intuitive user experiences'
+      title: "UI/UX Focus",
+      description: "Creating beautiful and intuitive user experiences",
     },
     {
       icon: Zap,
-      title: 'Performance',
-      description: 'Optimizing for speed and user satisfaction'
+      title: "Performance",
+      description: "Optimizing for speed and user satisfaction",
     },
     {
       icon: Users,
-      title: 'Collaboration',
-      description: 'Working effectively with teams and stakeholders'
-    }
-  ]
+      title: "Collaboration",
+      description: "Working effectively with teams and stakeholders",
+    },
+  ];
 
   return (
     <section id="about" className="py-20 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            About{' '}
+            About{" "}
             <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
               Me
             </span>
@@ -45,8 +45,8 @@ const About = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-600 rounded-full blur-2xl opacity-30 animate-pulse"></div>
               <div className="relative w-full h-full bg-gradient-to-br from-slate-800 to-slate-700 rounded-full border-4 border-blue-400/30 overflow-hidden">
                 <img
-                  src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg"
-                  alt="Alex Nova"
+                  src={ME}
+                  alt="Success"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -63,15 +63,18 @@ const About = () => {
                 Passionate Frontend Developer
               </h3>
               <p className="text-lg text-gray-300 leading-relaxed">
-                With over 5 years of experience in frontend development, I specialize in creating 
-                exceptional digital experiences that combine beautiful design with robust functionality. 
-                My journey in web development started with a fascination for how code can bring 
-                creative visions to life.
+                With over 2 years of experience in frontend development, I
+                specialize in creating exceptional digital experiences that
+                combine beautiful design with robust functionality. My journey
+                in web development started with a fascination for how code can
+                bring creative visions to life.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
-                I'm passionate about staying at the forefront of web technologies, constantly learning 
-                and adapting to new frameworks and best practices. When I'm not coding, you'll find me 
-                exploring the latest design trends or contributing to open-source projects.
+                I'm passionate about staying at the forefront of web
+                technologies, constantly learning and adapting to new frameworks
+                and best practices. When I'm not coding, you'll find me
+                exploring through daily.dev for latest technology insights and
+                best practices.
               </p>
             </div>
 
@@ -85,7 +88,9 @@ const About = () => {
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                     <Icon className="h-6 w-6 text-white" />
                   </div>
-                  <h4 className="text-lg font-semibold text-white mb-2">{title}</h4>
+                  <h4 className="text-lg font-semibold text-white mb-2">
+                    {title}
+                  </h4>
                   <p className="text-sm text-gray-400">{description}</p>
                 </div>
               ))}
@@ -94,7 +99,7 @@ const About = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;

@@ -1,4 +1,3 @@
-import React from 'react'
 import { Rocket, Heart } from 'lucide-react'
 
 const Footer = () => {
@@ -16,7 +15,7 @@ const Footer = () => {
               <Rocket className="h-6 w-6 text-white" />
             </div>
             <span className="text-xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-              Alex Nova
+              Success
             </span>
           </div>
 
