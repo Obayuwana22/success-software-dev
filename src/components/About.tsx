@@ -1,5 +1,5 @@
 import { Code, Palette, Zap, Users } from "lucide-react";
-import ME from "../images/aboutme.jpg";
+import ME from "../images/about-avatar.png";
 
 const About = () => {
   const highlights = [

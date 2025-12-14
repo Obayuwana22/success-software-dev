@@ -29,7 +29,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="flex items-center justify-center space-x-2 text-gray-400">
-            <span>© 2024 Alex Nova. Made with</span>
+            <span>© 2025 Success. Made with</span>
             <Heart className="h-4 w-4 text-red-400 fill-current animate-pulse" />
             <span>and lots of coffee</span>
           </div>

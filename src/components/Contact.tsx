@@ -50,7 +50,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Location",
-      value: "Abuja, FCT",
+      value: "Remote",
       href: "#",
     },
   ];
